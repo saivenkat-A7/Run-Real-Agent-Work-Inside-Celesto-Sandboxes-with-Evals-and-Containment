@@ -1,0 +1,40 @@
+{
+  "provenance": {
+    "provider": "sim",
+    "simulated": true,
+    "note": "SIMULATED guest: in-memory fake, no Celesto involved, costs are estimates. Re-run with --provider local|cloud to replace with real measurements."
+  },
+  "jobs": [
+    {
+      "sandbox_name": "sbx-jbi68cn2cp",
+      "started_at": "2026-10-24T10:12:51.642412+00:00",
+      "success": true
+    },
+    {
+      "sandbox_name": "sbx-vnqs9z1aqh",
+      "started_at": "2026-10-24T10:12:51.643514+00:00",
+      "success": true
+    },
+    {
+      "sandbox_name": "sbx-zyyqb3qb5i",
+      "started_at": "2026-10-24T10:12:51.644447+00:00",
+      "success": true
+    },
+    {
+      "sandbox_name": "sbx-qhbndqziog",
+      "started_at": "2026-10-24T10:12:51.644641+00:00",
+      "success": true
+    },
+    {
+      "sandbox_name": "sbx-u72ce8g8bq",
+      "started_at": "2026-10-24T10:12:51.644659+00:00",
+      "success": true
+    },
+    {
+      "sandbox_name": "sbx-n19qdggloo",
+      "started_at": "2026-10-24T10:12:51.644783+00:00",
+      "success": true
+    }
+  ],
+  "breakage_notes": "Ran 6 jobs on a thread pool, each in its own randomly named guest. Watched: name collisions (0 seen), peak simultaneously live sandboxes (5), shared state (each guest has its own disk; the ledger rows are keyed by run_id), leaked sandboxes (0 left live) and errors (0: none). SIMULATED provider: real rate limits and the free-trial one-sandbox cap are NOT exercised."
+}

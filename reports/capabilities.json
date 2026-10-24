@@ -1,0 +1,19 @@
+{
+  "capabilities": [
+    {
+      "id": "safety_hooks",
+      "why": "Every command passes a code-level policy before the guest sees it (also registered as a Celesto Callback). Blocks rm -rf /, fork bombs, secret reads, egress and non-allowlisted installs; blocked attempts are still audited. A prompt sentence cannot do that.",
+      "evidence_path": "grader/hooks.py"
+    },
+    {
+      "id": "snapshots",
+      "why": "A snapshot is taken before the risky step 7 so that a mid-task crash or a destructive command can be rolled back to a known-good guest instead of re-booting and re-installing from scratch; this is the rollback recovery policy.",
+      "evidence_path": "grader/providers.py"
+    },
+    {
+      "id": "network_policy",
+      "why": "The containment guest runs with internet mode off, so a prompt-injected exfiltration that slips past the hook (python urllib instead of curl) still cannot leave the microVM. Network policy is the second, independent layer.",
+      "evidence_path": "reports/evidence/containment.log"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "who": "Teaching assistants and bootcamp instructors who must autograde untrusted student code (fork bombs, infinite loops, file snooping) without risking the grading server.",
+  "agent_work": "For each submission the agent boots a fresh Celesto microVM, writes the student code and a test harness into it, compiles and runs it, reads the results, and writes a grade.",
+  "proof_output": "/work/grade.json read back from the guest: {submission, score, verdict, feedback}.",
+  "idea_source": "idea_bank"
+}

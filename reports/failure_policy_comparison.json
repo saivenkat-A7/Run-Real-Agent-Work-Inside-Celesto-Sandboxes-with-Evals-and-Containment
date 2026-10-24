@@ -1,0 +1,28 @@
+{
+  "provenance": {
+    "provider": "sim",
+    "simulated": true,
+    "note": "SIMULATED guest: in-memory fake, no Celesto involved, costs are estimates. Re-run with --provider local|cloud to replace with real measurements."
+  },
+  "note": "Step 7 killed on first attempt in every run; one retry after the policy.",
+  "policies": {
+    "resume": {
+      "runs": 3,
+      "successes": 3,
+      "mean_wall_clock_s": 3.112,
+      "mean_cost_usd": 1.3e-05
+    },
+    "rollback": {
+      "runs": 3,
+      "successes": 2,
+      "mean_wall_clock_s": 3.397,
+      "mean_cost_usd": 1.4e-05
+    },
+    "fresh": {
+      "runs": 3,
+      "successes": 1,
+      "mean_wall_clock_s": 3.828,
+      "mean_cost_usd": 1.6e-05
+    }
+  }
+}

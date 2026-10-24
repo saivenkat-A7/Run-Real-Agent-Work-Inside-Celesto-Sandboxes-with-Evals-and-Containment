@@ -1,0 +1,22 @@
+{"ts": "2026-10-24T10:12:51.629316+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "state", "state": "Created"}
+{"ts": "2026-10-24T10:12:51.629462+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "state", "state": "Ready"}
+{"ts": "2026-10-24T10:12:51.629469+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "state", "state": "Running"}
+{"ts": "2026-10-24T10:12:51.629473+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "step_started", "step": 2, "label": "write submission"}
+{"ts": "2026-10-24T10:12:51.629562+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "step_started", "step": 3, "label": "write harness"}
+{"ts": "2026-10-24T10:12:51.629702+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "step_started", "step": 4, "label": "toolchain check"}
+{"ts": "2026-10-24T10:12:51.629744+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "step_started", "step": 5, "label": "checkpoint"}
+{"ts": "2026-10-24T10:12:51.629776+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "snapshot_taken", "snapshot": "before-step7-sbx-n1lnq88hj8"}
+{"ts": "2026-10-24T10:12:51.629781+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "step_started", "step": 6, "label": "compile check"}
+{"ts": "2026-10-24T10:12:51.629917+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "step_started", "step": 7, "label": "run tests"}
+{"ts": "2026-10-24T10:12:51.629970+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "step_failed", "step": 7, "reason": "harness exited 137: Killed", "state": "MidTaskFailure"}
+{"ts": "2026-10-24T10:12:51.629975+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "policy_applied", "policy": "rollback", "step": 7}
+{"ts": "2026-10-24T10:12:51.629981+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "snapshot_restored", "snapshot": "before-step7-sbx-n1lnq88hj8", "state": "RolledBack"}
+{"ts": "2026-10-24T10:12:51.629986+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "step_started", "step": 6, "label": "compile check"}
+{"ts": "2026-10-24T10:12:51.630086+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "step_started", "step": 7, "label": "run tests"}
+{"ts": "2026-10-24T10:12:51.630183+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "step_started", "step": 8, "label": "read result"}
+{"ts": "2026-10-24T10:12:51.630240+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "step_completed", "step": 7, "after_policy": "rollback"}
+{"ts": "2026-10-24T10:12:51.630248+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "step_started", "step": 9, "label": "agent review + grade"}
+{"ts": "2026-10-24T10:12:51.630373+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "step_started", "step": 10, "label": "read proof output"}
+{"ts": "2026-10-24T10:12:51.630426+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "step_completed", "step": 10}
+{"ts": "2026-10-24T10:12:51.630432+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "state", "state": "Succeeded"}
+{"ts": "2026-10-24T10:12:51.630439+00:00", "run_id": "failure-demo", "sandbox_name": "sbx-n1lnq88hj8", "event": "cleanup_done", "state": "Deleted", "remaining": []}

@@ -1,0 +1,7 @@
+{
+  "failed_step": 7,
+  "total_steps": 10,
+  "policy": "rollback",
+  "rationale": "Rollback restores a snapshot taken after the environment was prepared (steps 2-5) and before the risky step 7, so a crashed or tampered guest returns to a known-good state without paying for a full re-boot and re-install, and without trusting whatever state the dying harness left on disk. Resume is cheapest but keeps possibly corrupted files; fresh is simplest and safest but repays the whole boot. When a provider lacks snapshots (Celesto Cloud) the pipeline degrades to fresh and logs policy_degraded. Only one retry is made so a deterministic failure cannot loop and burn credit.",
+  "trace_path": "reports/failure_trace.jsonl"
+}
